@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo app</title>
+    <link rel="stylesheet" href="bootstrap5.0/css/bootstrap.css" />
+    <link rel="stylesheet" href="fontawesomeweb/css/fontawesome.css" />
+    <link rel="stylesheet" href="fontawesomeweb/css/regular.css" />
+    <link rel="stylesheet" href="fontawesomeweb/css/solid.css" />
+    <link rel="stylesheet" href="fontawesomeweb/css/brands.css" />
+    <link rel="shortcut icon" href="img/icon.PNG" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h3 class="my-5">
+          Welcome <span id="welcome"></span>
+          <span>
+            <button class="btn btn-danger" onclick="logOut()">logout</button>
+          </span>
+        </h3>
+        <div class="card">
+          <h2 class="card-header">
+            Todo App <i class="fa-solid fa-list-check"></i>
+          </h2>
+          <div class="card-body">
+            <form action="">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder=" enter todos"
+                  id="todoinput"
+                />
+              </div>
+              <label for="" class="mt-3"> Todo date</label>
+              <div class="form-group">
+                <input
+                  type="date"
+                  class="form-control"
+                  placeholder=" enter date"
+                  id="tododate"
+                />
+              </div>
+
+              <input
+                type="submit"
+                value="Submit"
+                class="mt-3 btn btn-primary"
+              />
+            </form>
+          </div>
+        </div>
+
+        <br />
+
+        <div class="card mt-5">
+          <div class="card-header"><h3>Todo List</h3></div>
+
+          <div class="card-title py-3">
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder=" search todos"
+                id="searchtodo"
+              />
+            </div>
+          </div>
+          <div class="card-body">
+            <ul class="list-group list-group-numbered"></ul>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-dark" id="clearbtn">clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      style="
+        background-color: brown;
+        color: gray;
+        padding: 50px;
+        text-align: center;
+        margin-top: 50px;
+      "
+    >
+      Copyright &copy; <span id="year"></span> Tee Global Resources
+      <br />
+      with <span style="color: black"> &CapitalDifferentialD; </span> by Tee Global
+
+      <script>
+        let day = new Date();
+        let year = day.getFullYear();
+        let sp = document.getElementById("year");
+        sp.innerHTML = year;
+      </script>
+    </footer>
+
+    <script src="bootstrap5.0/js/bootstrap.js"></script>
+
+    <script src="fontawesomeweb/js/fontawesome.js"></script>
+    <script src="fontawesomeweb/js/regular.js"></script>
+
+    <script src="fontawesomeweb/js/brands.js"></script>
+
+    <script src="fontawesomeweb/js/solid.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

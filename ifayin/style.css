@@ -1,0 +1,38 @@
+div{
+    background-color: yellow;
+    padding: 20px;
+}
+
+/* css syntax */
+/* selector {
+    property:value;
+} */
+ /* general selector */
+*{
+    background-color: #000000;
+    color: rgb(214, 226, 107);
+}
+
+
+body{
+
+    background-image: url('agbaa.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center bottom;
+}
+/* class selctor */
+.item{
+    background-color: orange;
+}
+
+/* id selector */
+#ug{
+    background-color: aqua;
+}
+
+/* tag selector */
+
+li{
+    background-color: blue;
+}
